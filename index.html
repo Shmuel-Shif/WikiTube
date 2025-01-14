@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiTube</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="onInit()">
+
+<header>
+    <h1>Wiki<span class="divider">.</span>Tube</h1>
+    <div class="search-icon-input">
+        <input type="text" id="search-input" placeholder="Search for a video" autocomplete="off">
+        <img id="search-icon" src="svg/search-alt-1-svgrepo-com.svg" alt="search">
+    </div>
+        <button id="clear-history-btn">Clear History</button>
+        <button id="change-theme-btn">Change Theme</button>
+</header>
+
+<div class="box-contnear-video"> 
+    <div id="video-list">
+        <ul id="videos"></ul>
+    </div>
+
+    <div id="video-player-container">
+        <iframe id="video-player" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div> 
+
+<div class="box-contnear-wikipedia">
+
+    <div id="wikipedia-info">
+        <h2>Wikipedia Results</h2>
+        <p id="wiki-content">Search for a term to see Wikipedia results.</p>
+    </div>
+
+    <div id="history-info">
+        <h3>Search History:</h3>
+        <ul id="search-history"></ul>
+    </div>
+</div>
+
+ <div id="theme-modal" class="modal">
+    <div class="modal-content">
+        <input type="color" id="color-picker">
+        <button id="ok-color-btn">OK</button>
+        <button id="cancel-color-btn">Cancel</button>
+    </div>
+</div>
+    
+<footer>
+        <p>&copy; 2025 Shmuel Shif</p>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
